@@ -1,10 +1,10 @@
 # DecodeBot 3D Viewer
 
-Hi, this is the 3D model from our team (HSGS RoboLads, FTC #31113). This is the **v3 bot**, from 2 months before the regional round.
+Hi, this is the 3D model from our team (Robolab#3113). This is the **v3 bot**, from 2 months before the regional round.
 
 ## To use it simply
 
-Inside the `views/` folder I made 2 HTML files, one for the assembled robot and one for the exploded view. Check them out:
+Inside the `views/` folder, I made 2 HTML files, one for the assembled robot and one for the exploded view. Check them out:
 
 - `views/decodebot_assembled.html`
 - `views/decodebot_exploded.html`
@@ -49,8 +49,8 @@ The HTML views are simplified (about 150,000 triangles) to keep them light. Use 
 
 ### 1. Requirements
 
-- [Python 3.8+](https://www.python.org/downloads/) (on Windows, tick "Add Python to PATH" during install)
-- [Node.js](https://nodejs.org) (used once to decompress the model, see the note below)
+- [Python 3.8+](https://www.python.org/downloads/) (on Windows, tick "Add Python to PATH" during installation)
+- [Node.js](https://nodejs.org) (used once to decompress the model; see the note below)
 
 Install the Python libraries:
 
@@ -105,7 +105,7 @@ The script also prints the name of every part in the model.
 
 `.glb` is a standard 3D file format (binary glTF) that opens in many tools, including [Blender](https://www.blender.org), the [glTF Viewer](https://gltf-viewer.donmccurdy.com), and Windows 3D Viewer.
 
-`DecodeBot_opt.glb` is **meshopt-compressed**, which keeps the file small (about 3.4 MB) but means some Python libraries can't read it directly. That is why the script uses Node.js: on the first run it decompresses the model with `@gltf-transform/cli` and saves a copy named `DecodeBot_opt_plain.glb` next to the original. Later runs reuse that copy.
+`DecodeBot_opt.glb` is **meshopt-compressed**, which keeps the file small (about 3.4 MB) but means some Python libraries can't read it directly. That is why the script uses Node.js: on the first run, it decompresses the model with `@gltf-transform/cli` and saves a copy named `DecodeBot_opt_plain.glb` next to the original. Later runs reuse that copy.
 
 ## Troubleshooting
 
@@ -118,5 +118,4 @@ The script also prints the name of every part in the model.
 | Download error (403 or 404) with `--url` | Download the `.glb` manually and use `--file` instead |
 
 ## Credits
-
-Robot design: HSGS RoboLads, FTC team #31113. Please ask the team before reusing the model outside this project.
+Please ask me before reusing the model outside this project.
