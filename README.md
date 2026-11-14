@@ -8,6 +8,8 @@ Inside the `views/` folder, I made 2 HTML files, one for the assembled robot and
 
 - `views/decodebot_assembled.html`
 - `views/decodebot_exploded.html`
+<img width="768" height="830" alt="image" src="https://github.com/user-attachments/assets/3d2b8983-db2d-41d6-bbb0-881d242a6bf8" />
+
 
 Download one and double-click it to open it in your browser (details in [Quick start](#quick-start-just-look-at-the-robot) below).
 
